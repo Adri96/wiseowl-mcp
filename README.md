@@ -117,7 +117,7 @@ The tools follow the same rules as the app: unfinished tasks carry over to today
 | Tool | What it does |
 | --- | --- |
 | `list_boards` | Your boards, and how many tasks are open on each today. |
-| `get_day` | A day's tasks, with their status and how many times each was carried over. Opening today first brings over what's unfinished, as the app does. In Claude, the day shows up as a list you can tick right in the chat. |
+| `get_day` | A day's tasks, with their status, priority and how many times each was carried over. Opening today first brings over what's unfinished, as the app does. In Claude, the day shows up as a list you can tick right in the chat. |
 | `list_days` | The tasks of a range of days, up to 31. |
 | `search_tasks` | Finds tasks by their text, and if you like by status or between two dates. |
 | `get_stale_tasks` | The open tasks that keep being carried over: candidates to do now, break down or drop. |
@@ -127,8 +127,9 @@ The tools follow the same rules as the app: unfinished tasks carry over to today
 
 | Tool | What it does |
 | --- | --- |
-| `add_tasks` | Adds up to 50 tasks at once, for today or a later day, on the board you say. |
+| `add_tasks` | Adds up to 50 tasks at once, for today or a later day, on the board you say, with a priority if you like. |
 | `set_status` | Marks a task done, open again, won't do, or for the next day. |
+| `set_priority` | Sets the priority (low, medium or high) of one task, or up to 50 at once. |
 | `edit_task` | Rewrites a task's text. |
 | `move_task` | Plans an open task for another day, like pushing it in the app. |
 | `delete_task` | Deletes a task from every day it's on. It's flagged as destructive, so a well-behaved assistant asks you first. |
