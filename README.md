@@ -120,7 +120,7 @@ The tools follow the same rules as the app: unfinished tasks carry over to today
 | `get_day` | A day's tasks, with their status, priority and how many times each was carried over. Opening today first brings over what's unfinished, as the app does. In Claude, the day shows up as a list you can tick right in the chat. |
 | `list_days` | The tasks of a range of days, up to 31. |
 | `search_tasks` | Finds tasks by their text, and if you like by status or between two dates. |
-| `get_stale_tasks` | The open tasks that keep being carried over: candidates to do now, break down or drop. |
+| `get_stale_tasks` | The open tasks that keep being carried over: candidates to do now, break down or drop. Like `get_day` for today, it first brings over what's unfinished. |
 | `get_summary` | How many tasks were done, carried over, dropped or left open in a period of up to 92 days, in total and per day. |
 
 **Write**
@@ -130,7 +130,7 @@ The tools follow the same rules as the app: unfinished tasks carry over to today
 | `add_tasks` | Adds up to 50 tasks at once, for today or a later day, on the board you say, with a priority if you like. |
 | `set_status` | Marks a task done, open again, won't do, or for the next day. |
 | `set_priority` | Sets the priority (low, medium or high) of one task, or up to 50 at once. |
-| `edit_task` | Rewrites a task's text. |
+| `edit_task` | Rewrites a task's text. It replaces the old text, so it's flagged as destructive too. |
 | `move_task` | Plans an open task for another day, like pushing it in the app. |
 | `delete_task` | Deletes a task from every day it's on. It's flagged as destructive, so a well-behaved assistant asks you first. |
 
@@ -170,7 +170,7 @@ The full policy is at [wiseowl.cat/en/privacy-policy](https://wiseowl.cat/en/pri
 
 - How to connect each assistant: https://wiseowl.cat/en/connect/
 - Wise Owl: https://wiseowl.cat/
-- Feedback and support: hola@wiseowl.cat
+- Feedback and support: adriamunuera@me.com
 
 ## License
 
