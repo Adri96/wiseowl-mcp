@@ -133,6 +133,8 @@ The tools follow the same rules as the app: unfinished tasks carry over to today
 | `edit_task` | Rewrites a task's text. It replaces the old text, so it's flagged as destructive too. |
 | `move_task` | Plans an open task for another day, like pushing it in the app. |
 | `delete_task` | Deletes a task from every day it's on. It's flagged as destructive, so a well-behaved assistant asks you first. |
+| `create_board` | Creates a board, after the others (up to 10). Tasks go on it when the assistant names it in `add_tasks`. |
+| `rename_board` | Renames a board. Its days and tasks stay as they are. It replaces the old name, so it's flagged as destructive too. |
 
 **Prompts**
 
@@ -150,7 +152,7 @@ There are two permissions, or scopes:
 
 When you connect an assistant with OAuth, Wise Owl shows you what it asks for, and you allow or deny it. An access token has both.
 
-Assistants can read and change tasks and nothing else: not your password, your account or your billing. Your settings list what each assistant added, rewrote, moved or deleted, with an Undo next to each change.
+Assistants can read and change tasks, and create and rename boards, and nothing else: they can't delete a board, and can't reach your password, your account or your billing. Your settings list what each assistant added, rewrote, moved or deleted, and the boards it created or renamed, with an Undo next to each change.
 
 ## Revoke access
 
